@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161616"/>
+      <stop offset="0.5" stop-color="#050505"/>
+      <stop offset="1" stop-color="#101010"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0.2">
+      <stop offset="0" stop-color="#8e5208"/>
+      <stop offset="0.18" stop-color="#f8c84d"/>
+      <stop offset="0.38" stop-color="#fff0a0"/>
+      <stop offset="0.58" stop-color="#d99518"/>
+      <stop offset="0.78" stop-color="#ffe477"/>
+      <stop offset="1" stop-color="#9a5a08"/>
+    </linearGradient>
+    <linearGradient id="coinFace" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#fff0a0"/>
+      <stop offset="0.28" stop-color="#e8ac2d"/>
+      <stop offset="0.65" stop-color="#b8750c"/>
+      <stop offset="1" stop-color="#f5c84e"/>
+    </linearGradient>
+    <linearGradient id="coinSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdf67"/>
+      <stop offset="0.45" stop-color="#9d5d08"/>
+      <stop offset="0.7" stop-color="#f2bd37"/>
+      <stop offset="1" stop-color="#704006"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#b77b16" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#b77b16" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="12"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".55"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rounded black app tile and metallic rim -->
+  <rect x="48" y="48" width="928" height="928" rx="154" fill="#020202"/>
+  <rect x="62" y="62" width="900" height="900" rx="140" fill="url(#bg)" stroke="url(#gold)" stroke-width="13"/>
+  <rect x="75" y="75" width="874" height="874" rx="128" fill="none" stroke="#ffdf70" stroke-opacity=".18" stroke-width="2"/>
+  <ellipse cx="510" cy="780" rx="340" ry="115" fill="url(#glow)"/>
+
+  <!-- Stack of gold coins -->
+  <g filter="url(#shadow)">
+    <g>
+      <path d="M231 410 C231 378 347 352 485 352 C623 352 739 378 739 410 L739 485 C739 518 623 544 485 544 C347 544 231 518 231 485 Z" fill="url(#coinSide)" stroke="#6e4208" stroke-width="3"/>
+      <ellipse cx="485" cy="410" rx="254" ry="58" fill="url(#coinFace)" stroke="#fff0a0" stroke-width="5"/>
+      <ellipse cx="485" cy="410" rx="226" ry="43" fill="none" stroke="#fff2b0" stroke-opacity=".45" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M218 507 C218 475 334 449 472 449 C610 449 726 475 726 507 L726 580 C726 613 610 639 472 639 C334 639 218 613 218 580 Z" fill="url(#coinSide)" stroke="#6e4208" stroke-width="3"/>
+      <ellipse cx="472" cy="507" rx="254" ry="58" fill="url(#coinFace)" stroke="#ffe88a" stroke-width="5"/>
+      <ellipse cx="472" cy="507" rx="226" ry="43" fill="none" stroke="#fff2b0" stroke-opacity=".4" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M218 607 C218 575 334 549 472 549 C610 549 726 575 726 607 L726 680 C726 713 610 739 472 739 C334 739 218 713 218 680 Z" fill="url(#coinSide)" stroke="#6e4208" stroke-width="3"/>
+      <ellipse cx="472" cy="607" rx="254" ry="58" fill="url(#coinFace)" stroke="#ffe88a" stroke-width="5"/>
+      <ellipse cx="472" cy="607" rx="226" ry="43" fill="none" stroke="#fff2b0" stroke-opacity=".4" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M218 707 C218 675 334 649 472 649 C610 649 726 675 726 707 L726 778 C726 811 610 837 472 837 C334 837 218 811 218 778 Z" fill="url(#coinSide)" stroke="#6e4208" stroke-width="3"/>
+      <ellipse cx="472" cy="707" rx="254" ry="58" fill="url(#coinFace)" stroke="#ffe88a" stroke-width="5"/>
+      <ellipse cx="472" cy="707" rx="226" ry="43" fill="none" stroke="#fff2b0" stroke-opacity=".4" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Foreground euro coin -->
+  <g filter="url(#shadow)">
+    <circle cx="616" cy="590" r="224" fill="#090909" stroke="url(#gold)" stroke-width="20"/>
+    <circle cx="616" cy="590" r="203" fill="url(#bg)" stroke="#ffe58a" stroke-width="3"/>
+    <circle cx="616" cy="590" r="192" fill="none" stroke="#c58a20" stroke-opacity=".45" stroke-width="2"/>
+    <text x="616" y="668" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="310" font-weight="bold" fill="#6d4007" transform="translate(4 7)">€</text>
+    <text x="616" y="660" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="310" font-weight="bold" fill="url(#gold)" stroke="#ffdf70" stroke-width="1.5">€</text>
+  </g>
+</svg>

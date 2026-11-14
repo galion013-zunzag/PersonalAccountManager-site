@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Money — gestion personnelle des comptes</title>
+    <meta
+      name="description"
+      content="Money suit vos comptes, vos opérations, vos budgets et la situation du foyer. Application pour Mac, Windows, iPhone et Android. Les données restent sur votre appareil."
+    />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <header class="top">
+      <a class="brand" href="#accueil">
+        <img src="icon.svg" width="36" height="36" alt="" />
+        <span>Money</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+        Menu
+      </button>
+      <nav id="navigation" class="nav">
+        <a href="#fonctions">Fonctions</a>
+        <a href="#donnees">Données</a>
+        <a class="nav-download" href="#telecharger">Télécharger</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" id="accueil">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="kicker">my-Money</p>
+            <h1>Vos comptes, tenus simplement.</h1>
+            <p class="lead">
+              Money rassemble les comptes courants, l’épargne, les placements et les crédits.
+              Vous saisissez les opérations, suivez les budgets et voyez la situation du foyer.
+              Rien n’est envoyé à un serveur.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#telecharger">Télécharger</a>
+              <a class="btn btn-ghost" href="#fonctions">Voir les fonctions</a>
+            </div>
+          </div>
+          <figure class="hero-frame">
+            <video
+              poster="media/apercu-poster.jpg"
+              width="1280"
+              height="720"
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+              data-inview
+            >
+              <source src="media/apercu.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Parcours des écrans principaux. Comptes fictifs.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="intro" id="fonctions">
+        <div class="wrap">
+          <h2>Ce que Money permet de faire</h2>
+          <ul class="toc">
+            <li><a href="#comptes">Comptes</a></li>
+            <li><a href="#operations">Opérations</a></li>
+            <li><a href="#budgets">Budgets</a></li>
+            <li><a href="#situation">Situation</a></li>
+            <li><a href="#credits">Crédits</a></li>
+            <li><a href="#donnees">Données</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feature" id="comptes">
+        <div class="wrap feature-grid">
+          <div class="copy">
+            <p class="index">01</p>
+            <h2>Tous les comptes au même endroit</h2>
+            <p>
+              Compte courant, livret, placement et crédit. Chaque ligne indique la banque,
+              la référence masquée et le solde. Un livret montre l’écart avec son plafond.
+              Un crédit montre le capital restant dû.
+            </p>
+          </div>
+          <div class="media">
+            <figure>
+              <img
+                src="media/comptes.jpg"
+                width="1600"
+                height="634"
+                alt="Liste des comptes : courant, Livret A, assurance vie et deux crédits, avec leurs soldes."
+              />
+              <figcaption>Liste des comptes.</figcaption>
+            </figure>
+            <figure class="video-figure">
+              <video
+                poster="media/comptes-poster.jpg"
+                width="1280"
+                height="720"
+                muted
+                loop
+                playsinline
+                controls
+                preload="none"
+                data-inview
+              >
+                <source src="media/comptes.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Vidéo — la liste des comptes.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature alt" id="operations">
+        <div class="wrap feature-grid reverse">
+          <div class="copy">
+            <p class="index">02</p>
+            <h2>Les opérations, comme dans un tableur</h2>
+            <p>
+              Date, libellé, catégorie, montant et pointage se saisissent sur la ligne.
+              Le solde se recalcule tout seul. Une recette est verte. Seul un solde négatif
+              passe en rouge. Le calendrier du mois reprend les mêmes écritures, jour par jour.
+            </p>
+          </div>
+          <div class="media">
+            <figure>
+              <img
+                src="media/operations.jpg"
+                width="1600"
+                height="700"
+                alt="Tableau d’opérations de novembre : salaire, loyer, courses, énergie, avec pointage et solde."
+              />
+              <figcaption>Saisie des opérations et solde progressif.</figcaption>
+            </figure>
+            <figure class="video-figure">
+              <video
+                poster="media/operations-poster.jpg"
+                width="1280"
+                height="720"
+                muted
+                loop
+                playsinline
+                controls
+                preload="none"
+                data-inview
+              >
+                <source src="media/operations.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Vidéo — du tableau au calendrier du mois.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature" id="budgets">
+        <div class="wrap feature-grid">
+          <div class="copy">
+            <p class="index">03</p>
+            <h2>Budgets et échéances du mois</h2>
+            <p>
+              Le loyer, le salaire ou l’énergie reviennent à jour fixe. Un budget fixe un montant
+              pour une catégorie, par exemple les courses. Rien n’est créé tout seul : « Ajouter
+              au mois » écrit les lignes du mois affiché. Les dépenses de la catégorie diminuent
+              le budget.
+            </p>
+          </div>
+          <div class="media">
+            <figure>
+              <img
+                src="media/budgets.jpg"
+                width="1600"
+                height="900"
+                alt="Opérations récurrentes et budgets du compte courant, avec le solde prévu du mois."
+              />
+              <figcaption>Échéances récurrentes et budgets.</figcaption>
+            </figure>
+            <figure class="video-figure">
+              <video
+                poster="media/budgets-poster.jpg"
+                width="1280"
+                height="720"
+                muted
+                loop
+                playsinline
+                controls
+                preload="none"
+                data-inview
+              >
+                <source src="media/budgets.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Vidéo — budgets du compte.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature alt" id="situation">
+        <div class="wrap feature-grid reverse">
+          <div class="copy">
+            <p class="index">04</p>
+            <h2>La situation du foyer</h2>
+            <p>
+              Les revenus et les dépenses du foyer sont saisis à part des opérations.
+              Le patrimoine reprend les soldes des comptes, l’immobilier estimé et les crédits.
+              Money en tire l’actif net, la répartition et les indicateurs, dont le taux
+              d’endettement et le matelas de liquidités.
+            </p>
+          </div>
+          <div class="media">
+            <figure>
+              <img
+                src="media/situation.jpg"
+                width="1600"
+                height="900"
+                alt="Situation financière : revenus, dépenses et début du patrimoine, avec l’actif net."
+              />
+              <figcaption>Revenus, dépenses et actif net.</figcaption>
+            </figure>
+            <figure class="video-figure">
+              <video
+                poster="media/situation-poster.jpg"
+                width="1280"
+                height="720"
+                muted
+                loop
+                playsinline
+                controls
+                preload="none"
+                data-inview
+              >
+                <source src="media/situation.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Vidéo — de la situation au patrimoine.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature" id="credits">
+        <div class="wrap feature-grid">
+          <div class="copy">
+            <p class="index">05</p>
+            <h2>Crédits et échéancier</h2>
+            <p>
+              Chaque crédit affiche le montant emprunté, le taux, les dates et l’avancement
+              des mensualités. Le tableau détaille les intérêts, l’amortissement, l’assurance
+              et le capital restant dû. Le calendrier des crédits pose les prêts les uns
+              à côté des autres, année par année.
+            </p>
+          </div>
+          <div class="media">
+            <figure>
+              <img
+                src="media/credit.jpg"
+                width="1600"
+                height="900"
+                alt="Tableau d’amortissement d’un crédit immobilier : mensualités, intérêts et capital restant dû."
+              />
+              <figcaption>Tableau d’amortissement.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="media/credits-calendrier.jpg"
+                width="1600"
+                height="316"
+                alt="Calendrier des crédits : un prêt immobilier jusqu’en 2041 et un crédit auto plus court."
+              />
+              <figcaption>Calendrier des crédits.</figcaption>
+            </figure>
+            <figure class="video-figure">
+              <video
+                poster="media/credit-poster.jpg"
+                width="1280"
+                height="720"
+                muted
+                loop
+                playsinline
+                controls
+                preload="none"
+                data-inview
+              >
+                <source src="media/credit.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Vidéo — échéancier du crédit.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature alt" id="donnees">
+        <div class="wrap feature-grid reverse">
+          <div class="copy">
+            <p class="index">06</p>
+            <h2>Vos chiffres restent chez vous</h2>
+            <p>
+              Aucune information financière n’est envoyée à un serveur. Sur Mac et Windows,
+              les comptes sont enregistrés dans un fichier <span class="file">.money</span> que
+              vous choisissez. Sur le téléphone, ils restent dans l’application, ou dans un
+              fichier du dossier Documents.
+            </p>
+          </div>
+          <div class="media">
+            <figure>
+              <img
+                src="media/parametres.jpg"
+                width="1600"
+                height="900"
+                alt="Paramètres : choix entre le navigateur et un fichier local, et plafonds d’épargne."
+              />
+              <figcaption>Enregistrement des données.</figcaption>
+            </figure>
+            <figure class="video-figure">
+              <video
+                poster="media/parametres-poster.jpg"
+                width="1280"
+                height="720"
+                muted
+                loop
+                playsinline
+                controls
+                preload="none"
+                data-inview
+              >
+                <source src="media/parametres.mp4" type="video/mp4" />
+              </video>
+              <figcaption>Vidéo — paramètres d’enregistrement.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="download" id="telecharger">
+        <div class="wrap download-grid">
+          <div>
+            <p class="kicker">Version 0.1.0</p>
+            <h2>Installer Money</h2>
+            <p class="download-lead">
+              La même application sur l’ordinateur et sur le téléphone.
+            </p>
+            <div class="downloads">
+              <a class="dl" href="telechargements/Money_0.1.0_universal.dmg" download>
+                <span>Mac</span>
+                <strong>Télécharger pour Mac</strong>
+                <small>Apple silicon et Intel · 6,6 Mo</small>
+              </a>
+              <a class="dl" href="telechargements/Money_0.1.0_x64-setup.exe" download>
+                <span>Windows</span>
+                <strong>Télécharger pour PC</strong>
+                <small>Windows 10 et 11 · 2,3 Mo</small>
+              </a>
+              <!-- Fiche App Store à rétablir quand elle est publiée : https://apps.apple.com/fr/search?term=Money -->
+              <span class="dl store" title="Bientôt disponible">
+                <span>iPhone</span>
+                <strong>App Store</strong>
+                <small>Bientôt disponible</small>
+              </span>
+              <!-- Fiche Play Store à rétablir quand elle est publiée : https://play.google.com/store/apps/details?id=app.money.comptes -->
+              <span class="dl store" title="Bientôt disponible">
+                <span>Android</span>
+                <strong>Play Store</strong>
+                <small>Bientôt disponible</small>
+              </span>
+            </div>
+            <p class="note">
+              Au premier lancement, macOS et Windows peuvent demander une confirmation parce que
+              l’application n’est pas signée. Sur Mac : clic droit sur Money, puis Ouvrir.
+              Sur Windows : Informations complémentaires, puis Exécuter quand même.
+              L’installation Windows ne demande pas les droits d’administrateur.
+            </p>
+          </div>
+          <figure class="phone">
+            <img
+              src="media/mobile-comptes.jpg"
+              width="390"
+              height="844"
+              alt="Money sur un téléphone : liste des comptes et barre de navigation en bas."
+            />
+            <figcaption>Money sur téléphone.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap foot-row">
+        <span>Money</span>
+        <span>Les écrans de cette page utilisent des comptes fictifs.</span>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>
