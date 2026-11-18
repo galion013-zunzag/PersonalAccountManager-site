@@ -303,7 +303,24 @@ h2 {
 }
 
 .download-lead {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
+}
+
+.download h3 {
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 560;
+}
+
+.release {
+  margin: 0 0 28px;
+  padding-left: 1.15rem;
+  max-width: 40rem;
+}
+
+.release li {
+  margin: 0.35rem 0;
 }
 
 .downloads {
